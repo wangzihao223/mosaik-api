@@ -92,6 +92,7 @@ def exec_cutstom_func(sim, fd, msg):
         get_method = msg.content[0]
         args = msg[1]
         kwargs = msg[2]
+
         if get_method == 'init':
             """init(self, sid, **sim_params)"""
             sid =  args[0]
